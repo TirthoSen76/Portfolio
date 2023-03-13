@@ -33,7 +33,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    left: 4rem;
+    left: 3rem;
     padding: .25rem;
 }
 .item {
@@ -59,9 +59,76 @@ body {
     color: #000;
 }
 
+/* Home section  */
+.home-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    /* background-color: lightblue; */
+}
+.home-container .container-1-1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 8rem 2.5rem;
+}
+.text {
+    text-transform: uppercase;
+    padding: .2rem 0rem;
+}
+.header-text {
+    color: orangered;
+    font-size: 2rem;
+}
+.home-container .container-1-1 p {
+    padding: 1rem 0rem;
+    text-align: justify;
+}
+.home-container .container-1-1 .btn {
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    background-color: rgb(240, 76, 16);
+    padding: 1rem 2rem;
+    border-radius: .2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.home-container .container-1-1 .btn:hover {
+    background-color: orangered;
+}
+.home-container .container-1-2 {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.home-container .container-1-2 .image {
+    width: 70%;
+    height: 70%;
+}
+.home-container .container-1-2 img {
+    width: 110%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive section  */
 @media (max-width: 768px) {
+    /* Head section  */
     .header-container {
         flex-flow: column wrap;
         position: static;
@@ -91,4 +158,25 @@ body {
         color: #fff;
         border-radius: .2rem;
     }
+
+    /* Home section  */
+    .home-container {
+        flex-flow: column wrap;
+        margin-top: 0rem;
+        padding: 1rem 0rem;
+    }
+    .home-container .container-1-1 {
+        padding: 1rem;
+    }
+    .header-text {
+        font-size: 1.6rem;
+    }
+    .home-container .container-1-1 p {
+        padding: 1rem 0rem;
+        text-align: left;
+    } 
+    .home-container .container-1-2 img {
+        width: 100%;
+        height: 100%;
+    }   
 }
