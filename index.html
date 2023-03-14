@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <link rel="shortcut icon" href="./image/portfolio2.png" type="image/x-icon">
+        <link rel="stylesheet" href="./style/all.min.css">
         <link rel="stylesheet" href="./style/style.css">
     </head>
     <body>
@@ -27,7 +28,7 @@
         </div>
 
         <!-- Home section  -->
-        <div class="home-container">
+        <div id="home" class="home-container">
             <div class="container-1-1">
                 <div class="item1">
                     <h2 class="text">hello i'm</h2>
@@ -42,6 +43,90 @@
                 <div class="image">
                     <img src="./image/profile-picture1.png" alt="image">
                 </div>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div id="about" class="about-container home-container">
+            <div class="container-1-2">
+                <div class="image">
+                    <img src="./image/profile-picture2.png" alt="image">
+                </div>
+            </div>
+            <div class="container-1-1">
+                <div class="item1">
+                    <h2 class="text">About</h2>
+                    <!-- <h2 class="text header-text">John Doe</h2> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium laborum similique perspiciatis vero dignissimos optio molestiae nesciunt odio facere incidunt?</p>
+                </div>
+                <div class="item2">
+                    <button class="btn-download"><i class="fa-solid fa-download"></i>Download CV</button>
+                </div>
+            </div>            
+        </div>
+
+        <!-- Work section  -->
+        <div id="work" class="work-container">
+            <div class="container">
+                <div><h2>Latest working <span>projects</span></h2></div>
+                <div class="card">
+                    <div>
+                        <img src="./image/image 4.png" alt="image">
+                        <h4>Power-x-gym (gym-website)</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium odio placeat non.</p>
+                    </div>
+                    <div>
+                        <img src="./image/image 5.png" alt="image">
+                        <h4>Creative Agency</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium odio placeat non.</p>
+                    </div>
+                    <div>
+                        <img src="./image/image 6.png" alt="image">
+                        <h4>Hard Rock Music</h4>
+                        <p>Lorem, ipsum dolor adipisicing elit. Praesentium odio placeat non.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact section  -->
+        <div id="contact" class="contact-section">
+            <div class="container">
+                <div class="first"><img src="./image/map.jpg" alt="image"></div>
+                <div class="second">
+                    <div class="form">
+                        <h2>Contact section</h2>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" required>
+                                <label for="">Username</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" required>
+                                <label for="">Email</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea cols="30" rows="10" placeholder="Write your comment.."></textarea>
+                            </div>                
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section  -->
+        <div class="footer-container">
+            <div class="icon">
+                <div class="icon-inside">
+                    <a title="Google" href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-solid fa-address-card fa-brands"></i></a>
+                    <a href="#"><i class="fa-solid fa-lightbulb fa-brands"></i></a>
+                </div>
+            </div>
+            <div class="text">
+                <p>All rights reserved by Classroom &copy;2023</p>
             </div>
         </div>
 
